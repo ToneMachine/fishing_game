@@ -7,7 +7,7 @@ import pygame.mouse
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load('python/pygames/graphic/npc/fisherman.png').convert_alpha()
+        self.image = pygame.image.load('fishing_game/graphic/npc/fisherman.png').convert_alpha()
         self.rect = self.image.get_rect(midbottom=(400, 90))
         self.player_x_move = 0
 
@@ -37,7 +37,7 @@ class Player(pygame.sprite.Sprite):
 class Lobster(pygame.sprite.Sprite):
     def __init__(self, player):
         super().__init__()
-        self.image = pygame.image.load('python/pygames/graphic/npc/lobster.png')
+        self.image = pygame.image.load('fishing_game/graphic/npc/lobster.png')
         self.rect = self.image.get_rect(topleft=(750, 350))
         self.movement = 3
         self.caught = 2
@@ -78,7 +78,7 @@ class Lobster(pygame.sprite.Sprite):
 class Nemo(pygame.sprite.Sprite):
     def __init__(self, player):
         super().__init__()
-        self.image = pygame.image.load('python/pygames/graphic/npc/nemo.png').convert_alpha()
+        self.image = pygame.image.load('fishing_game/graphic/npc/nemo.png').convert_alpha()
         self.rect = self.image.get_rect(center=(400, 200))
         self.movement = 3
         self.caught = 2
@@ -123,7 +123,7 @@ pygame.display.set_caption("Fishing")
 clock = pygame.time.Clock()
 
 # Background
-ocean_surface = pygame.image.load('python/pygames/graphic/surface/background1.png').convert()
+ocean_surface = pygame.image.load('fishing_game/graphic/surface/background1.png').convert()
 
 # Player
 player = Player()
