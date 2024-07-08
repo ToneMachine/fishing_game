@@ -1,7 +1,6 @@
 import pygame
 from sys import exit
 import math
-
 import pygame.mouse
 
 class Player(pygame.sprite.Sprite):
